@@ -14,11 +14,21 @@ header {
     padding-left: 10px;
     box-shadow: 3px 1px 5px black;
     width: 100%;
-    position: fixed;
 }
 
 header h1 {
     margin: 0;
+    font-size: 25px;
+}
+
+header p {
+  font-size: 10px;
+}
+
+img {
+  height: 300px;
+  width: 102%;
+  margin-top: 10px;
 }
 
 nav ul {
@@ -69,6 +79,6 @@ footer {
     color: #fff;
     text-align: center;
     padding: 1rem 0;
-    width: 100%;
+    width: 102%;
     bottom: 0;
 }
