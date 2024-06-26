@@ -54,7 +54,7 @@ main {
     margin-top: 5rem;
     margin-bottom: 5rem;
     padding: 1rem;
-    text-align: center;
+    bottom
     width: 30%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -73,3 +73,4 @@ footer {
     width: 100%;
     bottom: 0;
 }
+
