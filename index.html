@@ -35,7 +35,108 @@
             <div class="tv-show">
                 <h3>Channel 1</h3>
             </div>
-            <iframe src="http://www.yupptv.com/yupptvnew/online-tv/mastiii/live/embed" frameborder="0" width="560" height="315" allowfullscreen></iframe>
+            
+<link href="//releases.flowplayer.org/7.2.5/skin/skin.css" rel="stylesheet"></link>
+
+<link href="//demos.flowplayer.com/media/css/demo.css" rel="stylesheet"></link>
+
+<link href="//demos.flowplayer.com/media/css/pygments.css" rel="stylesheet"></link>
+
+<style>
+
+.flowplayer {
+
+  background-color: #333333;  height: 380px; width: 100%;
+
+}
+
+.flowplayer .fp-color-play {
+
+  fill: #eee;
+
+}
+
+</style>
+
+<script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hls.js/0.8.9/hls.light.min.js"></script>
+
+<script src="//releases.flowplayer.org/7.2.5/flowplayer.min.js"></script>
+
+<br />
+
+
+
+<div id="content">
+
+<center>
+
+Live streaming 1<br />
+
+Just click the play button below to start watching the live stream.
+
+</center>
+
+<div class="flowplayer no-brand is-splash is-paused skin-custom fp-fat fp-outlined has-splash-text fp-default-playlist is-mouseout" data-advance="false" data-embed="false" data-live="true" data-qlabels="240p,270p,360p,540p,720p,1080p,1440p,2160p" data-qsel="-mobile,-mobile2,-sd,-md,-hd,-fullhd,-qhd,-4k" data-ratio="0.5625">
+
+<video data-title="Live stream">
+
+<source src="https://d2q8p4pe5spbak.cloudfront.net/bpk-tv/9XM/9XM.isml/index.m3u8" type="application/x-mpegurl"></source></video>
+
+</div>
+
+</div>
+
+<script>
+
+if (location.search.indexOf("hlsjs=false") > -1) {
+
+  flowplayer.conf.hlsjs = false;
+
+} else if (location.search.indexOf("safari=true") > -1) {
+
+  flowplayer.conf.hlsjs = {
+
+    safari: true
+
+  };
+
+}
+
+var toggleButton = document.getElementById("hlsjstoggle"),
+
+    hlsjsLoaded = location.search.indexOf("hlsjs=false") < 0;
+
+if (toggleButton) {
+
+  if (flowplayer.engines[0].engineName !== "hlsjs") {
+
+    toggleButton.parentNode.style.display = "none";
+
+  } else {
+
+    toggleButton.href = location.pathname + (hlsjsLoaded
+
+      ? "?hlsjs=false"
+
+      : "");
+
+    toggleButton.getElementsByTagName("span")[0].innerHTML = hlsjsLoaded
+
+      ? "without"
+
+      : "with";
+
+  }
+
+}
+
+</script>
+
+
+
+</div><div class="separator" style="clear: both; text-align: left;"><br /></div><h2 style="clear: both; text-align: left;"><span style="color: #2b00fe;">9XM Live Tv</span></h2><div class="separator" style="clear: both; text-align: left;"><br /></div><h3 style="clear: both; text-align: left;">9XM Live Tv - Watch 9 XM Tv Live In Free-Music Tv . Watch unlimited Music songs, unlimited entertainment, enjoy unlimited fun with 9 xm live tv .9XM Live Tv - Watch 9 XM Tv Live In Free-Music Tv.</h3><br /><span style="color: #2b00fe;"><br /></span></div>
             <div class="tv-show">
                 <img src="tv-show-2.jpg" alt="TV Show 2">
                 <h3>TV Show 2</h3>
